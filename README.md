@@ -1,4 +1,10 @@
 # Trucker_REST
+To explore more about the API EndPints go to the following link: 
+[https://trucker-rest.herokuapp.com/swagger-ui.html#/](https://trucker-rest.herokuapp.com/swagger-ui.html#/)
+
+if you are using postman or other tool you can use the following link :
+[https://trucker.vishwaraj.dev/swagger-ui.html#/](https://trucker.vishwaraj.dev/swagger-ui.html#/)
+
 This is Spring Boot REST API for the vehicle activity with the geolocation
 
 
