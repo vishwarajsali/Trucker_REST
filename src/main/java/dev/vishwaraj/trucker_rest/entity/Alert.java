@@ -1,15 +1,16 @@
 package dev.vishwaraj.trucker_rest.entity;
 
-import javax.persistence.Entity; 
+import javax.persistence.Entity;
 
 import java.sql.Timestamp;
- 
+
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
@@ -36,6 +37,7 @@ public class Alert {
     @GenericGenerator(name = "pg-uuid", strategy = "uuid2")
     @Column(length = 50)
     @JsonIgnore
+    @JsonProperty(value = "alert_id")
     private String alertId;
 
     private String vin;
