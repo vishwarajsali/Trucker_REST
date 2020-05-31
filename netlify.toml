@@ -1,5 +1,5 @@
 
 [build]
-base = “”
-publish = “dist/trucker"
-command = “mvnw clean install”
+base = ""
+publish = "dist/trucker"
+command = "mvnw clean install"
