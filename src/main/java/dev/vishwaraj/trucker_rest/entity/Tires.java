@@ -27,6 +27,7 @@ public class Tires {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "pg-uuid")
     @GenericGenerator(name = "pg-uuid", strategy = "uuid2")
     @Column(length = 50)
+    @JsonIgnore
     private String tId;
 
 
