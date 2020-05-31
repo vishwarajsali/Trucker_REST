@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn; 
 import javax.persistence.OneToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -36,6 +38,7 @@ public class Reading {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "pg-uuid")
     @GenericGenerator(name = "pg-uuid", strategy = "uuid2")
     @Column(length = 50)
+    @JsonIgnore
     private String rId;
 
     private String vin;

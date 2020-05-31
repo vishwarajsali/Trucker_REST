@@ -7,7 +7,10 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id; 
+import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -32,6 +35,7 @@ public class Alert {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "pg-uuid")
     @GenericGenerator(name = "pg-uuid", strategy = "uuid2")
     @Column(length = 50)
+    @JsonIgnore
     private String alertId;
 
     private String vin;
