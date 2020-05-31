@@ -13,7 +13,7 @@ public interface AlertRepository extends JpaRepository<Alert, String>{
     List<Alert> findByVin(String vin);
 
     
-    @Query(value = "select * From Alert a WHERE a.priority = ?1 AND a.created_at >= ?2", nativeQuery = true)
+    @Query(value = "select * From alert a WHERE a.priority = ?1 AND a.created_at >= ?2", nativeQuery = true)
     List<Alert> getHighAlerts(@Param("priority")String priority,@Param("created_at")Timestamp timestamp);
 
 }   

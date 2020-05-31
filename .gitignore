@@ -29,3 +29,47 @@ build/
 
 ### VS Code ###
 .vscode/
+
+application.properties
+
+#SQL Connection
+# spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+# spring.datasource.url = jdbc:mysql://localhost:3306/egen?serverTimezone=UTC
+# spring.datasource.username = root
+# spring.datasource.password =  
+# spring.jpa.show-sql = true
+# spring.jpa.hibernate.ddl-auto = update
+# spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url = jdbc:mysql://a5s42n4idx9husyc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/aexgyo5jnq5dtyz5
+spring.datasource.username = m2o8u3wvaq5rcj5k
+spring.datasource.password =  ar05p55ibhldn4pm
+spring.jpa.show-sql = true
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+  
+  
+#H2 Connection
+# spring.h2.console.enabled=true
+# spring.datasource.url=jdbc:h2:file:~/trucker
+# spring.datasource.driverClassName=org.h2.Driver
+# spring.datasource.username=sa
+# spring.datasource.password=
+# spring.jpa.show-sql=true
+# spring.jpa.hibernate.ddl-auto=update
+# spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+
+
+# POSTGRESQL Connection
+# spring.jpa.database=POSTGRESQL
+# spring.datasource.platform=postgres
+# spring.datasource.url=jdbc:postgresql://localhost:5432/testdb
+# spring.datasource.username=
+# spring.datasource.password= 
+# spring.jpa.show-sql=true
+# spring.jpa.generate-ddl=true
+# spring.jpa.hibernate.ddl-auto=create-drop
+# spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true

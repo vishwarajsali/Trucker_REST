@@ -11,6 +11,6 @@ import dev.vishwaraj.trucker_rest.entity.Reading;
 
 public interface ReadingRepository extends JpaRepository<Reading, String> {
 
-    @Query(value = "select * From Reading r WHERE r.vin = ?1 AND r.created_at >= ?2", nativeQuery = true)
+    @Query(value = "select * From reading r WHERE r.vin = ?1 AND r.created_at >= ?2", nativeQuery = true)
     List<Reading> findByVinAndAndCreatedAt(@Param("vin")String vin,@Param("created_at")Timestamp timestamp);
 }   
