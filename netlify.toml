@@ -1,5 +1,8 @@
 
 [build]
+
 base = ""
 publish = "dist/trucker"
-command = "mvnw clean install"
+command  = "chmod a+x ./mvnw && ./mvnw clean install"
+
+ 
