@@ -52,7 +52,7 @@ public class ReadingService {
         List<Geolocation> locations = new ArrayList<>();
         List<Reading> readings = readingRepository.findByVinAndAndCreatedAt(vin, Timestamp.from(Instant.now().minus(Duration.ofHours(1))));
         readings.forEach(reading -> {
-            locations.add(new Geolocation(reading.getLatitude(), reading.getLongitute()));
+            locations.add(new Geolocation(reading.getLatitude(), reading.getLongitude()));
         });;
         return locations;
     }

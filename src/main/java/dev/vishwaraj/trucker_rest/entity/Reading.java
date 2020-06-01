@@ -47,9 +47,9 @@ public class Reading {
 
     private float latitude;
 
-    private float longitute;
+    private float longitude;
 
-    private Timestamp timeStamp;
+    private Timestamp timestamp;
 
     private float fuelVolume;
 

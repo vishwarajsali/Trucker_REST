@@ -37,8 +37,8 @@ public class Tires {
     private int rearRight;
 
 
-    @OneToOne(mappedBy = "tires")
-    @JsonIgnore
-    private Reading reading;
+    // @OneToOne(mappedBy = "tires")
+    // @JsonIgnore
+    // private Reading reading;
 
 }
